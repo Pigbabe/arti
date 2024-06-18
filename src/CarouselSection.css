@@ -1,0 +1,11 @@
+/* src/components/CarouselSection.css */
+.main-artist-card-app {
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+     background: linear-gradient(165deg, #f5d5a7, #8ea6c3 30%, #33506e 90%);
+   }
+   

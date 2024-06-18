@@ -1,0 +1,217 @@
+/* GenreChoice.css */
+
+/* 전체 컴포넌트 스타일 */
+.GenreChoiceComponent {
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+/* 헤더 스타일 */
+.GenreChoiceHeader {
+    background: rgba(0, 0, 0);
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* 팝업 버튼 스타일 */
+.GC_PopupButton {
+    width: 120px;
+    height: 40px;
+    background: black;
+    border: 1px solid white;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* 제목 스타일 */
+.GC_HeaderTitle {
+    font-size: 24px;
+    margin-right: 44%;
+}
+
+/* 장르 박스 스타일 */
+.GenreBasket {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(165deg, #33506e, #8ea6c3 88%);
+    width: 100vw;
+    height: calc(100vh - 70px);
+    position: relative; /* 추가 */
+}
+
+.GenreBasket > div {
+    margin: 0 auto;
+}
+
+/* 장르 버튼 스타일 */
+.GenreButtons {
+    display: flex;
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    align-items: center;
+    flex-wrap: wrap;
+    width: 360px; /* 너비 조정 */
+    top: 10%; /* 장르 버튼 위로 위치 조정 */
+    right: 5%; /* 오른쪽 여백 */
+    z-index: 2; /* 장르 버튼 위에 배치 */
+}
+
+.GenreButtons button {
+    background: #4a74cf;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: grab; /* 드래그 가능하도록 설정 */
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px; /* 간격 추가 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.NoteSymbol {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.GenreText {
+    font-size: 16px;
+}
+
+.GenreButtons button:hover {
+    background: #3766a3; /* 산호색 */
+    animation: rotate-axis 3s;
+    transform-style: preserve-3d;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+/* 페이지 내비게이션 버튼 스타일 */
+.PageNavigationButtons {
+    display: flex;
+    position:absolute;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.NavigationButton {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.NavigationButton:hover {
+    background-color: #8ea6c3;
+}
+
+/* 팝업 스타일 */
+.GenrePopup {
+    display: flex;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    z-index: 5;
+    width: 320px;
+    min-height: 30vh;
+    max-height: 50vh;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.SelectedList {
+    padding: 0;
+}
+
+.SelectedGenreTitle {
+    margin: 0;
+    color: black;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.WishGenres_li {
+    align-items: center;
+    margin: 10px;
+}
+
+.GC_DeleteButton {
+    border-radius: 20px;
+    margin-left: 1px;
+    background: rgb(240, 71, 71);
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.NextPageButton,
+.PopupDeleteButton {
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    margin-right: 30px;
+    border-radius: 5px;
+    background: linear-gradient(165deg, #33506e, #8ea6c3 88%);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.DropArea {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f0f0f0;
+    border: 2px dashed #8c8c8c;
+    text-align: center;
+    height: 100px; /* 높이 조정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.DropArea:hover {
+    background: #e0e0e0;
+    border-color: #6c6c6c;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 19px;
+}

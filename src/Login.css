@@ -1,0 +1,14 @@
+.Login-p {
+     text-align: center; /* 텍스트 가운데 정렬 */
+ }
+ 
+ .Login-p .toggle-link {
+     color: black; /* 링크 텍스트 색상을 검정으로 설정 */
+     text-decoration: none; /* 밑줄 제거 */
+     cursor: pointer; /* 포인터 커서 추가 */
+ }
+ 
+ .Login-p .toggle-link:hover {
+     color: black; /* 호버 시 텍스트 색상은 그대로 검정 */
+ }
+ 
